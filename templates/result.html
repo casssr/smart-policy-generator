@@ -1,0 +1,28 @@
+<!-- templates/result.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Generated Policy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <h1>Generated Cybersecurity Policy</h1>
+    <p class="muted">Hi: {{ user_name }},  For: <strong>{{ business_type }}</strong> — Tools: {{ tools or 'Not specified' }}</p>
+
+    <pre class="policy">{{ policy }}</pre>
+
+    <form method="post" action="{{ url_for('download') }}">
+      <input type="hidden" name="policy_text" value="{{ policy|e }}">
+      <input type="hidden" name="filename" value="{{ filename }}">
+      <button type="submit" class="btn">Download Policy (.txt)</button>
+    </form> <br> 
+
+    <a href="{{ url_for('index') }}" class="btn secondary">Create another</a>
+<br>
+    <footer class="muted small">Prototype • Ogogoroh Casmir Omizu • Dennis Osadebay University</footer>
+  </main>
+</body>
+</html>

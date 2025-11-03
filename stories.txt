@@ -1,0 +1,5 @@
+Fake transfer alert: vendor received screenshot of fake bank transfer; buyer claimed paid.
+Impersonation: customer received message from an account claiming to be the vendor with different number.
+POS fraud: customer used cloned card and payment reversed after goods released.
+SIM swap attempt: vendor lost WhatsApp access after SIM change on operator side.
+Phishing: link shared promising deposits leads to credential theft.
